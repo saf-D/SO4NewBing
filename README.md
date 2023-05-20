@@ -1,4 +1,4 @@
-# go-proxy-bing
+# SO4NewBing
 
 基于微软 New Bing 简单定制，拥有一致的 UI 体验，支持 ChatGPT 提示词，国内可用，基本兼容微软 Bing AI 所有功能，无需登录即可畅聊。
 
@@ -10,6 +10,7 @@
 
 ⭐ 遇到一切问题，先点左下角 ![新主题](./docs/img/bing-clear.png) 试试，不行使用刷新大法（Shift + F5 或 Ctrl + Shift + R 或 右上角设置中的一键重置），最终大招就 清理浏览器缓存 及 Cookie ，比如（24 小时限制、未登录提示等等）
 
+MENU
 - [go-proxy-bing](#go-proxy-bing)
   - [网页展示](#网页展示)
   - [侧边栏](#侧边栏)
@@ -56,29 +57,29 @@
 
 ![撰写](./docs/img/sidebar-compose.png)
 
-## 演示站点
+## 站点大全
 
-### 甲骨文小鸡仔，轻虐
+### Vercel通道
 
-- https://bing.vcanbb.top
+- https://so-4-new-bing-saf-d.vercel.app/
 
-### Railway 搭建
+- https://so4ai.vercel.app/
 
-- https://bing-railway.vcanbb.top
+- https://hiso4.vercel.app/
 
-- https://go-proxy-bingai-production.up.railway.app
+- https://1145141.vercel.app/
 
-### Vercel 搭建
+- https://so4-bing.vercel.app/
 
-- https://bing-vercel.vcanbb.top
+- https://new-bing.vercel.app/
 
-- https://go-proxy-bingai-adams549659584.vercel.app
+- https://so4-newbing.vercel.app/
 
 ### Render 搭建
 
-- https://bing-render.vcanbb.top
+- https://go-proxy-bingai-uciv.onrender.com/
 
-- https://go-proxy-bingai.onrender.com
+- https://so4.流浪地球.xyz/
 
 ## 获取 Cookie
 
@@ -108,91 +109,4 @@ Go_Proxy_BingAI_USER_TOKEN_3=xxx ...
 
 ## 部署
 
-> ⭐ 需 https 域名 (自行配置 nginx 等) (前后端都有限制 只有在HTTPS的情况下，浏览器 Accept-Encoding 才会包含 br , localhost 除外)
-
-> 支持 Linux (amd64 / arm64)、Windows (amd64 / arm64)
-
-> 国内机器部署可配置 socks 环境变量
-
-### Docker
-
-> 参考 [Dockerfile](./docker/Dockerfile) 、[docker-compose.yml](./docker/docker-compose.yml)
-
-- docker 示例
-
-```bash
-# 运行容器 监听8080 端口
-docker run -d -p 8080:8080 --name go-proxy-bingai --restart=unless-stopped adams549659584/go-proxy-bingai
-
-# 配置 socks 环境变量
-docker run -e Go_Proxy_BingAI_SOCKS_URL=192.168.0.88:1070 -e Go_Proxy_BingAI_SOCKS_USER=xxx -e Go_Proxy_BingAI_SOCKS_PWD=xxx -d -p 8080:8080 --name go-proxy-bingai --restart=unless-stopped adams549659584/go-proxy-bingai
-```
-
-- docker compose 示例
-
-```bash
-version: '3'
-
-services:
-  go-proxy-bingai:
-    # 镜像名称
-    image: adams549659584/go-proxy-bingai
-    # 容器名称
-    container_name: go-proxy-bingai  
-    # 自启动
-    restart: unless-stopped
-    ports:
-      - 8080:8080
-    # environment:
-    #   - Go_Proxy_BingAI_SOCKS_URL=192.168.0.88:1070
-    #   - Go_Proxy_BingAI_SOCKS_USER=xxx
-    #   - Go_Proxy_BingAI_SOCKS_PWD=xxx
-```
-
-### Release
-
-在 [Github Releases](https://github.com/adams549659584/go-proxy-bingai/releases) 下载适用于对应平台的压缩包，解压后可得到可执行文件 go-proxy-bingai，直接运行即可。
-
-### Railway
-
-> 主要配置 Dockerfile 路径 及 端口就可以
-
-```bash
-PORT=8080
-RAILWAY_DOCKERFILE_PATH=docker/Dockerfile
-```
-
-一键部署，点这里 => [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/uIckWS?referralCode=BBs747)
-
-![Railway 模板部署](./docs/img/railway-1.png)
-
-自行使用 Railway 部署配置如下
-
-![Railway 环境变量](./docs/img/railway-2.png)
-
-![Railway 域名](./docs/img/railway-3.png)
-
-### Vercel
-
-一键部署，点这里 => [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/adams549659584/go-proxy-bingai&project-name=go-proxy-bingai&repository-name=go-proxy-bingai-vercel)
-
-![Vercel 一键部署](./docs/img/vercel-1.png)
-
-![Vercel 域名](./docs/img/vercel-2.png)
-
-### Render
-
-一键部署，点这里 => [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/adams549659584/go-proxy-bingai)
-
-![Render 一键部署](./docs/img/render-1.png)
-
-![Render 域名](./docs/img/render-2.png)
-
-## TODO
-
-- [x] 撰写
-- [x] Vue3 重构
-- [x] 提示词
-- [x] 历史聊天
-- [ ] 导出消息到本地（Markdown、图片、PDF）
-- [ ] 简单访问权限控制
+见https://github.com/adams549659584/go-proxy-bingai
