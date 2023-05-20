@@ -11,19 +11,12 @@
 ⭐ 遇到一切问题，先点左下角 ![新主题](./docs/img/bing-clear.png) 试试，不行使用刷新大法（Shift + F5 或 Ctrl + Shift + R 或 右上角设置中的一键重置），最终大招就 清理浏览器缓存 及 Cookie ，比如（24 小时限制、未登录提示等等）
 
 MENU
-- [go-proxy-bing](#go-proxy-bing)
+- [SO4NewBing](#SO4NewBing)
   - [网页展示](#网页展示)
   - [侧边栏](#侧边栏)
-  - [演示站点](#演示站点)
+  - [站点大全](#站点大全)
   - [获取 Cookie](#获取Cookie)
-  - [环境变量](#环境变量)
   - [部署](#部署)
-    - [Docker](#Docker)
-    - [Release](#Release)
-    - [Railway](#Railway)
-    - [Vercel](#Vercel)
-    - [Render](#Render)
-  - [TODO](#TODO)
 
 ## 网页展示
 
@@ -75,11 +68,15 @@ MENU
 
 - https://so4-newbing.vercel.app/
 
-### Render 搭建
+### Render通道
 
 - https://go-proxy-bingai-uciv.onrender.com/
 
 - https://so4.流浪地球.xyz/
+
+站点可能会出现弹窗，请不要点击`免费使用`，请关闭弹窗。此弹窗非SO4托管！
+
+![弹窗](/docs/img/f880e0340d40f66b6f79dee5fb43573.png)
 
 ## 获取 Cookie
 
@@ -90,22 +87,6 @@ MENU
 - 拿到 Cookie 后，在网站设置用户 Cookie 弹窗填入即可。
 
 ![获取Cookie](./docs/img/bing-cookie.png)
-
-## 环境变量
-
-```bash
-# 运行端口 默认 8080 可选
-PORT=8080
-# Socks 环境变量 示例 可选
-Go_Proxy_BingAI_SOCKS_URL=192.168.0.88:1070
-# Socks 账号、密码 可选
-Go_Proxy_BingAI_SOCKS_USER=xxx
-Go_Proxy_BingAI_SOCKS_PWD=xxx
-# 默认用户 Cookie 设置，可选，固定前缀 Go_Proxy_BingAI_USER_TOKEN 可设置多个，未登录用户将随机使用
-Go_Proxy_BingAI_USER_TOKEN_1=xxx
-Go_Proxy_BingAI_USER_TOKEN_2=xxx
-Go_Proxy_BingAI_USER_TOKEN_3=xxx ...
-```
 
 ## 部署
 
