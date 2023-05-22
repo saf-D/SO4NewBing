@@ -56,17 +56,7 @@ MENU
 
 - https://so-4-new-bing-saf-d.vercel.app/
 
-- https://so4ai.vercel.app/
-
-- https://hiso4.vercel.app/
-
-- https://1145141.vercel.app/
-
-- https://so4-bing.vercel.app/
-
 - https://new-bing.vercel.app/
-
-- https://so4-newbing.vercel.app/
 
 ### Render通道
 
